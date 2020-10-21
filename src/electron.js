@@ -9,12 +9,14 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1020,
+    height: 680,
     webPreferences: {
       nodeIntegration: true
     }
   })
+
+  win.removeMenu() 
 
   // and load the index.html of the app.
   //win.loadFile('index.html')
